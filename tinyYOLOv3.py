@@ -163,9 +163,7 @@ def infer_video(args):
     capture.open(args.i)
 
     # Set up OpenCV video writer object for output video generation using XVID codec
-    # file_in = "C:\\Users\\MOENN03\\IdeaProjects\\tinyYOLOv3\\output.mp4" # Windows 10 setting
-    # codec = cv2.VideoWriter_fourcc("X", "V", "I", "D") # Windows 10 setting
-    file_in = "output.avi" # Raspbian setting
+    file_in = "output.avi"
     codec = cv2.VideoWriter_fourcc("M", "P", "4", "2") # Raspbian setting after FFMPEG 1.4 installation
     frame_rate = 30
     width = int(capture.get(3))

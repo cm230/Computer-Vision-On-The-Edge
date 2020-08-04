@@ -5,8 +5,6 @@ class YoloParams:
         self.num = 3 if 'num' not in param else int(param['num'])
         self.coords = 4 if 'coords' not in param else int(param['coords'])
         self.classes = 80 if 'classes' not in param else int(param['classes'])
-        #self.anchors = [10.0, 13.0, 16.0, 30.0, 33.0, 23.0, 30.0, 61.0, 62.0, 45.0, 59.0, 119.0, 116.0, 90.0, 156.0,
-        #            198.0, 373.0, 326.0] if 'anchors' not in param else [float(a) for a in param['anchors'].split(',')]
         self.anchors = [10.0,14.0,  23.0,27.0,  37.0,58.0,  81.0,82.0,  135.0,169.0,  344.0,319.0] \
             if 'anchors' not in param else [float(a) for a in param['anchors'].split(',')]
         self.mask = [3,4,5]
@@ -21,4 +19,4 @@ class YoloParams:
             self.anchors = maskedAnchors
 
         self.side = side
-        self.isYoloV3 = 'mask' in param  # Weak way to determine but the only one.
+        self.isYoloV3 = 'mask' in param

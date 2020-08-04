@@ -1,9 +1,4 @@
 import os
-import sys
-# For the following openvino import statement to work, perform the following steps prior to Intellij launch:
-# 1. Launch a Windows cmd terminal
-# 2. Enter C:\Program Files (x86)\IntelSWTools\openvino\bin\setupvars.bat
-# 3. Enter C:\Program Files\JetBrains\IntelliJ IDEA Community Edition <version>\bin\idea.bat
 from openvino.inference_engine import IENetwork, IECore
 
 class Network:
@@ -28,26 +23,12 @@ class Network:
         # Initialize the plugin
         self.plugin = IECore()
 
-        # Add a CPU extension, if applicable
-        #if cpu_extension and "CPU" in device:
-        #    self.plugin.add_extension(cpu_extension, device)
-
         # Load the Intermediate Representation files
         model_xml = model
         model_bin = os.path.splitext(model_xml)[0] + ".bin"
         self.network = IENetwork(model=model_xml, weights=model_bin)
 
         self.network.batch_size = 1
-
-        # In case of CPU, check for any unsupported layers, and let the user
-        # know if anything is missing. Exit the program, if so.
-        if "CPU" in device:
-            supported_layers = self.plugin.query_network(network=self.network, device_name= "CPU")
-            unsupported_layers = [l for l in self.network.layers.keys() if l not in supported_layers]
-            if len(unsupported_layers) != 0:
-                print("Unsupported layers found: {}".format(unsupported_layers))
-                print("Check whether extensions are available to add to IECore.")
-                sys.exit(1)
 
         assert len(self.network.inputs.keys()) == 1 # YOLOv3-based single input topologies supported only
 
@@ -88,6 +69,4 @@ class Network:
         '''
         Returns a list of the results for the output layer of the network.
         '''
-        # return self.exec_network.requests[0].outputs[self.output_blob]
-        # return self.exec_network.requests[0].output_blobs
         return self.exec_network.requests[0].outputs

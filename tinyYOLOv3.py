@@ -25,7 +25,7 @@ def get_args():
     optional.add_argument("--i", "--input_file", help="Optional: Path to a video file. If not provided, \
                           camera input is used", default='CAM', type=str)
     optional.add_argument("--l", "--label_file", help="Optional: Path to a file of object class labels", type=str)
-    optional.add_argument("--d", "--device_name", help="Optional: Name of the device to do inference on. CPU (default),
+    optional.add_argument("--d", "--device_name", help="Optional: Name of the device to do inference on. CPU (default),\
                           GPU, FPGA, HDDL or MYRIAD", default='CPU', type=str)
     optional.add_argument("--t", "--threshold", help="Optional: Confidence threshold for filtering of object \
                           detections", default=0.5, type=float)

@@ -13,7 +13,7 @@ The corresponding object detection demo application, which is produced in the co
   <img src="https://github.com/cm230/Computer-Vision-On-The-Edge/blob/master/demo.gif"/>
 </p>
 
-The overall __hardware setup__ looks as follows:
+The __hardware setup__ looks as follows:
 * Raspberry Pi 3 Model B+ (Raspberry Pi 4 should be just fine as well)
 * Raspberry Pi on-board camera module
 * Intel Neural Compute Stick 2

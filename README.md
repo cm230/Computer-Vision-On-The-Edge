@@ -5,9 +5,9 @@ Whenever network connectivity is not available, or network latency is insufficie
 
 Edge AI, i.e., AI computations performed locally on the “edge” with little or no network connectivity using locally obtained data represents a viable alternative under these circumstances subject to the computation and data processing limitations of the edge device under consideration. 
 
-In the Medium blog posts I explain how to use the open source Intel OpenVINO library together with the Intel Neural Compute Stick 2 for object detection on a commodity edge device, the Raspberry Pi.
+In the Medium blog posts, I explain how to use the open source Intel OpenVINO library together with the Intel Neural Compute Stick 2 for edgde AI in the form of object detection on a commodity edge device, the Raspberry Pi.
 
-The demo application in the form of object detection on video frames using [YOLOv3-tiny](https://pjreddie.com/darknet/yolo/) on a Raspberry Pi with an Intel Neural Compute Stick 2, which is produced in the course of the two blog posts, is shown below (input video source: CAMPUS dataset for multi-view object tracking - Y. Xu, X. Liu, L. Qin, and S.-C. Zhu, “Cross-view People Tracking by Scene-centered Spatio-temporal Parsing”, AAAI Conference on Artificial Intelligence (AAAI), 2017).
+The corresponding object detection demo application, which is produced in the course of the two blog posts, using [YOLOv3-tiny](https://pjreddie.com/darknet/yolo/) is shown below (input video source: CAMPUS dataset for multi-view object tracking - Y. Xu, X. Liu, L. Qin, and S.-C. Zhu, “Cross-view People Tracking by Scene-centered Spatio-temporal Parsing”, AAAI Conference on Artificial Intelligence (AAAI), 2017).
 
 <p align="center">
   <img src="https://github.com/cm230/Computer-Vision-On-The-Edge/blob/master/demo.gif"/>

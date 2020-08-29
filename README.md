@@ -6,9 +6,9 @@ This is the repo accompanying my two-part Medium article "Edge AI - Computer vis
 </p>
 
 The overall __hardware setup__ looks as follows:
-+Raspberry Pi 3 Model B+ (Raspberry Pi 4 should be just fine as well)
-+Raspberry Pi on-board camera module
-+Intel Neural Compute Stick 2
+* Raspberry Pi 3 Model B+ (Raspberry Pi 4 should be just fine as well)
+* Raspberry Pi on-board camera module
+* Intel Neural Compute Stick 2
 
 The __software__ side of things consists of:
 * [Intel OpenVINO toolkit for Raspbian OS](https://docs.openvinotoolkit.org/latest/openvino_docs_install_guides_installing_openvino_raspbian.html) to be installed on the Raspberry Pi. The demos were generated with version: 2020.1.023

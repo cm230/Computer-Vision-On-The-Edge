@@ -1,5 +1,5 @@
 # Computer Vision On The Edge
-This is the repo accompanying my two-part Medium article "Edge AI - Computer vision on the edge", ![Part 1](https://medium.com/datadriveninvestor/edge-ai-computer-vision-on-the-edge-dfa4ad604651), ![Part 1](https://medium.com/datadriveninvestor/edge-ai-computer-vision-on-the-edge-dfa4ad604651).
+This is the repo accompanying my two-part Medium article "Edge AI - Computer vision on the edge", ![Part 1](https://medium.com/datadriveninvestor/edge-ai-computer-vision-on-the-edge-dfa4ad604651), ![Part 2](https://medium.com/datadriveninvestor/edge-ai-computer-vision-on-the-edge-dfa4ad604651).
 
 ![Voronoi diagrams](https://github.com/cm230/Computational-Geometry/blob/master/VoronoiDiagram.png)
 

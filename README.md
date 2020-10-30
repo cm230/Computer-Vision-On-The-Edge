@@ -1,5 +1,5 @@
 # Computer Vision On The Edge
-This is the repo accompanying my Medium article "Edge AI - Computer vision on the edge", [Part 1](https://medium.com/datadriveninvestor/edge-ai-computer-vision-on-the-edge-dfa4ad604651), [Part 2](https://medium.com/datadriveninvestor/edge-ai-computer-vision-on-the-edge-dfa4ad604651). 
+This is the repo accompanying my Medium article "Edge AI - Computer vision on the edge", [Part 1](https://medium.com/datadriveninvestor/edge-ai-computer-vision-on-the-edge-dfa4ad604651), [Part 2](https://medium.com/datadriveninvestor/edge-ai-computer-vision-inference-on-the-edge-part-2-2-aaddfae870f0). 
 
 Whenever network connectivity is not available, or network latency is insufficient, or there is a need for local processing due to regulatory, privacy and security concerns, or, indeed, a combination of all of these aspects is given, today’s standard cloud-based AI approach isn’t an option.
 

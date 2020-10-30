@@ -25,4 +25,4 @@ The __software__ side of things consists of:
 
 I recommend to install [FFMPEG](https://ffmpeg.org/) on your Raspberry Pi to make it easier to find a working file extension and output video codec combination.
 
-The custom-implementation of object detection applications using this hardware and software setup alongside the code in this repo is described in detail in [Part 2](https://medium.com/datadriveninvestor/edge-ai-computer-vision-on-the-edge-dfa4ad604651) of my Medium article.
+The custom-implementation of object detection applications using this hardware and software setup alongside the code in this repo is described in detail in [Part 2](https://medium.com/datadriveninvestor/edge-ai-computer-vision-inference-on-the-edge-part-2-2-aaddfae870f0) of my Medium article.
